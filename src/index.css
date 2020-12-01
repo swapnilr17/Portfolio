@@ -7,3 +7,26 @@ body{
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #00c7f2;
+    -webkit-border-radius: 1ex;
+}
+
+
+
+:root{
+  scrollbar-color: #00C7F2 #ffffff !important;
+  scrollbar-width: thick !important;
+  scrollbar-border-radius: 1ex;
+}
