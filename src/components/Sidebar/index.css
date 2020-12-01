@@ -1,0 +1,32 @@
+.sidebar{
+  display:none;
+}
+
+.sidebar-active{
+  display:none;
+}
+
+@media only screen and (max-width: 700px) {
+.sidebar-active{
+  display: block;
+  height:100vh;
+  width:100vw;
+  position:fixed;
+  background:#fff;
+  z-index: 99;
+}
+
+.sidebar-active ul{
+  height: 100%;
+  width:100%;
+  width:100%;
+  margin: 0 auto;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+}

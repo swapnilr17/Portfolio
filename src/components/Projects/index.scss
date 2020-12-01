@@ -1,0 +1,119 @@
+.project{
+  margin:0;
+  padding-top:20px;
+  padding-bottom: 40px;
+  background:#F3F4F9;
+  width:100vw;
+}
+
+.project-container{
+  max-width:1200px;
+  height:100%;
+  // border-style:solid;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.project-title{
+  padding:60px;
+  font-size: 5em;
+  font-weight: 500;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:20px;
+  padding:20px;
+}
+
+.grid-item{
+  background:white;
+  box-shadow:0 60px 120px rgba(150,155,187,.2);
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  .grid-image{
+    border-radius: 10px 10px 0 0;
+    width:100%;
+    overflow:hidden;
+
+  }
+  .grid-image img{
+    border-radius: 10px 10px 0 0;
+    max-width:100%;
+    height:100%;
+    overflow:hidden;
+    transition:transform .4s ease;
+  }
+
+  .grid-image img:hover{
+
+    transform: rotate(0.5deg) scale(1.05) translateX(0) translateZ(0);
+    border-radius: 10px 10px 0 0;
+    transition: all .3s ease;
+    overflow:hidden;
+  }
+
+  .grid-title{
+    padding:20px;
+    padding-bottom: 0;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .grid-p{
+    padding:20px;
+    padding-top:10px;
+    font-size: 10px;
+    font-weight:300;
+  }
+
+  .grid-button{
+    padding: 20px;
+    padding-top:5px;
+  }
+  .grid-button button{
+    border:0;
+    padding:10px 20px;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow:0 60px 120px rgba(150,155,187,.2);
+    border-radius: 8px;
+    display: block;
+  }
+  .grid-button button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .project-title{
+    padding-top:5px;
+    padding-bottom: 0;
+    font-size:3em;
+    font-weight: 500;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+}
