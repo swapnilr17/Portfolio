@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Home = () =>{
   return(
@@ -18,9 +19,13 @@ const Home = () =>{
         <img src={require("../../assets/images/github.svg").default} alt="github"/>
         <img src={require("../../assets/images/behance.svg").default} alt="behance"/>
       </div>
-      <div class="home-button"><button>Projects</button></div>
+      <div class="home-button"><Link to="projects" smooth ={true}
+                        duration={500}
+                        spy={true}
+                        exact ='true'
+                        offset={-80}><button>Projects</button></Link></div>
     </div>
-    <div class="home-image"><img src={require('../../assets/images/main.svg').default} alt="main"/></div>
+    <div class="home-image"><img src={require('../../assets/images/main4.svg').default} alt="main"/></div>
   </div>
 </div>
 

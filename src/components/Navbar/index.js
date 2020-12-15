@@ -1,5 +1,6 @@
 import React ,{useState} from 'react';
 import './index.scss';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Navbar = ({toggle,isOpen}) =>{
 
@@ -14,18 +15,45 @@ const changeBackground = ()=>{
     setActive(false);
   }
 }
+
+const toggleHome = () => {
+  scroll.scrollToTop();
+}
+
   window.addEventListener('scroll',changeBackground)
   return(
     <div className= {active ? 'navbar active': 'navbar'}>
     <div className= "nav70">
-      <div class="nav-title">
-        Swapnil
+      <div class="nav-logo">
+        <Link to="/" onClick={toggleHome} smooth ={true}
+                        duration={500}
+                        spy={true}
+                        exact ='true'
+                        offset={-80}>
+                        <img src={require("../../assets/images/nav.svg").default} alt="nav-logo"/></Link>
       </div>
       <div class="nav-list">
       <ul class="nav-subheadings">
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/skills">Skills</a></li>
+        <li><Link to="about" smooth ={true}
+                        duration={500}
+                        spy={true}
+                        exact ='true'
+                        offset={-80}>About</Link></li>
+        <li><Link to="projects" smooth ={true}
+                        duration={500}
+                        spy={true}
+                        exact ='true'
+                        offset={-80}>Projects</Link></li>
+        <li><Link to="skills" smooth ={true}
+                        duration={500}
+                        spy={true}
+                        exact ='true'
+                        offset={-80}>Skills</Link></li>
+        <li><Link to="contact" smooth ={true}
+                        duration={500}
+                        spy={true}
+                        exact ='true'
+                        offset={-80}>Contact</Link></li>
       </ul>
       <ul className={isOpen ? "burger-menu-active" : "burger-menu"} onClick={toggle} >
         <li id="new1"></li>
