@@ -24,7 +24,7 @@ const toggleHome = () => {
   return(
     <div className= {active ? 'navbar active': 'navbar'}>
     <div className= "nav70">
-      <div class="nav-logo">
+      <div className="nav-logo">
         <Link to="/" onClick={toggleHome} smooth ={true}
                         duration={500}
                         spy={true}
@@ -32,8 +32,8 @@ const toggleHome = () => {
                         offset={-80}>
                         <img src={require("../../assets/images/nav.svg").default} alt="nav-logo"/></Link>
       </div>
-      <div class="nav-list">
-      <ul class="nav-subheadings">
+      <div className="nav-list">
+      <ul className="nav-subheadings">
         <li><Link to="about" smooth ={true}
                         duration={500}
                         spy={true}

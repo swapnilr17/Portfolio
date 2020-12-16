@@ -115,6 +115,8 @@ h1{
     border-radius: 50px;
     display: block;
     letter-spacing:1px;
+    cursor: pointer;
+    outline:none;
   }
   .grid-button button:hover {
     background-position: right center; /* change the direction of the change here */

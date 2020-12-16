@@ -1,7 +1,7 @@
 import React ,{useState} from 'react';
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
+import Posts from '../components/Post';
+import Postnav from '../components/Post/nav'
 
 const Post = () =>{
     const[isOpen,setIsOpen] = useState(false)
@@ -11,8 +11,8 @@ const Post = () =>{
     }
   return(
     <div>
-    <Navbar toggle={toggle} isOpen={isOpen}/>
-    <Sidebar isOpen={isOpen}/>
+    <Postnav/>
+    <Posts/>
     <Footer/>
     </div>
   )

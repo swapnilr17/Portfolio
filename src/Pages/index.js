@@ -20,7 +20,7 @@ const Main = () =>{
     <Sidebar isOpen={isOpen}/>
     <Home />
     <About />
-    <Project />
+    <Project/>
     <Skills/>
     <Contact/>
     <Footer/>

@@ -7,8 +7,7 @@ const Footer = () =>{
   return(
     <div className="footer">
       <div className="footer-container">
-        <div className="caption">{`${year} `+' © '+' Copyright'}</div>
-        <div className="love">Crafted with <img src={require('../../assets/images/love.png').default}/>by <a href="http://www.instagram.com/swapnilr17">@swapnilr17</a></div>
+        <div className="caption">{`${year} `+' © '+' Swapnil Rawat'} | Crafted with <img src={require('../../assets/images/love.png').default}/>by <a href="http://www.instagram.com/swapnilr17">@swapnilr17</a></div>
       </div>
     </div>
   )

@@ -1,7 +1,8 @@
 .footer{
-  max-width:100vw;
+  width:100%;
   background: black;
   bottom:0;
+  
 }
 
 .footer-container{
@@ -11,33 +12,27 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction:row;
 }
 
 .caption{
-  padding-top:20px;
+  padding:20px;
   color:white;
   font-size: 1em;
-  font-weight: 500;
-}
-
-.love{
-  padding:10px;
-  color:white;
-  display: flex;
+  font-weight: 300;
+  display:flex;
   align-items: center;
 }
 
-.love img{
+.caption img{
   width:25px;
   padding:5px;
 }
-
-.love a{
+.caption a{
   text-decoration: none;
   color:white;
   margin-left:8px;
 }
-.love a:hover{
+.caption a:hover{
   color:rgb(146, 71, 245);
 }

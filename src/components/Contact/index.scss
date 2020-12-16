@@ -21,18 +21,14 @@ overflow-x:hidden;
   height:100%;
   -webkit-box-shadow: 0 0 10px rgba(88, 86, 86, 0.308);
         box-shadow: 0 0 10px rgba(88, 88, 88, 0.39);
-
   display:flex;
 }
 
 .contact-details{
   padding:20px;
   width:50%;
-  // background-image:url('../../assets/images/floral.jpg');
-  // background-position: center;
-  // background-size: cover;
   background-color: #fa624b;
-background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
   display:flex;
   justify-content:center;
   align-items: center;
@@ -124,6 +120,8 @@ form button{
   border-radius: 10px;
   display: block;
   letter-spacing:1px;
+  cursor: pointer;
+  outline:none;
 }
 form button:hover {
   background-position: right center; /* change the direction of the change here */
