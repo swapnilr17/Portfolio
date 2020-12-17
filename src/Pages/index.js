@@ -14,10 +14,11 @@ const Main = () =>{
     const toggle = () => {
         setIsOpen(!isOpen);
     }
+
   return(
     <div>
     <Navbar toggle={toggle} isOpen={isOpen}/>
-    <Sidebar isOpen={isOpen}/>
+    <Sidebar toggle={toggle} isOpen={isOpen}/>
     <Home />
     <About />
     <Project/>

@@ -25,7 +25,7 @@ const Home = () =>{
                         exact ='true'
                         offset={-80}><button>Projects</button></Link></div>
     </div>
-    <div className="home-image"><img src={require('../../assets/images/main4.svg').default} alt="main"/></div>
+    <div className="home-image"><img src={require("../../assets/images/blogging.png").default}/></div>
   </div>
 </div>
 
