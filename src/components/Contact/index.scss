@@ -37,16 +37,16 @@ overflow-x:hidden;
 }
 
 .detail-title{
-  font-size: 3em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 
 }
 
 .detail{
-  margin:10px;
   font-size:1em ;
+  font-weight: 300;
   display:flex;
   align-items: center;
 }
@@ -75,10 +75,16 @@ overflow-x:hidden;
 }
 
 form span{
-  margin:20px;
-  font-size: 2em;
-  font-weight: 700;
-  color:rgb(37, 37, 37);
+  font-weight: 600;
+    font-size: 40px;
+    margin-bottom:20px;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4fd 0%, #B721ff 100%);
+    background-size:100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color:transparent;
 }
 
 form input[type="text"]{

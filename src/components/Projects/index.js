@@ -20,7 +20,7 @@ const Project = () =>{
             <div className="grid-image"><img src={post.image} alt="twitter"/></div>
             <div className="grid-title">{post.title}</div>
             <div className="grid-p">{post.tag}</div>
-            <div className="grid-button"><Link to={post.path} style={{ textDecoration: 'none' }}><button>View Project</button></Link></div>
+            <div className="grid-button"><a href={post.path} style={{ textDecoration: 'none' }}><button>View Project</button></a></div>
             </div>
           ))}
         </div>

@@ -8,10 +8,10 @@ const Home = () =>{
   <div className="home-70">
     <div className="home-text">
       <div className="home-text-title">
-      New Era New Need
+      HEY WELCOME
       </div>
       <div className="home-text-p">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        Hello My Name is Swapnil Rawat and this is my portfolio webpage. Scroll down or click on Projects to checkout my all projects.
       </div>
       <div className="social-icons">
         <img src={require("../../assets/images/twitter.svg").default} alt="twitter"/>

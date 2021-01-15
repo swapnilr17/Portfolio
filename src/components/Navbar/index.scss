@@ -75,7 +75,8 @@ li a:hover{
   width:25px;
   border-radius:30px;
   border: 2px solid;
-  margin: 2px;
+  margin: 3px;
+  background-color: black;
 }
 
 .burger-menu-active{
@@ -87,6 +88,7 @@ display:none;
     border: 2px solid;
     list-style-type:none;
     cursor: pointer;
+    background-color: black;
   }
 
   #new1{
@@ -107,6 +109,7 @@ display:none;
 
 @media only screen and (max-width: 1200px) {
   .nav70{
+    width:90%;
     justify-content: space-around;
   }
 }

@@ -44,6 +44,7 @@ const Contact = () => {
       <div className="contact-container">
       <div className="contact-data">
         <div className="contact-details">
+          <div className="detail-image"><img src={require('../../assets/images/profile.svg').default} alt="phone" width="250px" height="250px"/></div>
           <div className="detail-title">Swapnil Rawat</div>
             <div className="detail"><img src={require('../../assets/images/phone-white.png').default} alt="phone"/>+91 7505480288</div>
           <div className="detail"><img src={require('../../assets/images/email-white.png').default} alt="email"/>swapnilr1700@gmail.com</div>
