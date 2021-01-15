@@ -14,10 +14,10 @@ const Home = () =>{
         Hello My Name is Swapnil Rawat and this is my portfolio webpage. Scroll down or click on Projects to checkout my all projects.
       </div>
       <div className="social-icons">
-        <img src={require("../../assets/images/twitter.svg").default} alt="twitter"/>
-        <img src={require("../../assets/images/dribbble.svg").default} alt="dribbble"/>
-        <img src={require("../../assets/images/github.svg").default} alt="github"/>
-        <img src={require("../../assets/images/behance.svg").default} alt="behance"/>
+        <a href="https://www.twitter.com/XavierGreek"><img src={require("../../assets/images/twitter.svg").default} alt="twitter"/></a>
+        <a href="https://dribbble.com/swapnil_r17"><img src={require("../../assets/images/dribbble.svg").default} alt="dribbble"/></a>
+        <a href="https://www.github.com/swapnilr17"><img src={require("../../assets/images/github.svg").default} alt="github"/></a>
+        <a href="https://www.behance.net/xaviergreek"><img src={require("../../assets/images/behance.svg").default} alt="behance"/></a>
       </div>
       <div className="home-button"><Link to="projects" smooth ={true}
                         duration={500}
