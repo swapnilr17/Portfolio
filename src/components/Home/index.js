@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.scss';
+import Typical from 'react-typical';
+import Typewriter from 'typewriter-effect';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Home = () =>{
@@ -8,10 +10,10 @@ const Home = () =>{
   <div className="home-70">
     <div className="home-text">
       <div className="home-text-title">
-      HEY WELCOME
+      Swapnil Rawat
       </div>
       <div className="home-text-p">
-        Hello My Name is Swapnil Rawat and this is my portfolio webpage. Scroll down or click on Projects to checkout my all projects.
+        <p>I am a </p><Typewriter options={{strings: ['Web Developer', 'Ui Designer'],autoStart: true,loop: true, pauseFor: '500'}}/>
       </div>
       <div className="social-icons">
         <a href="https://www.twitter.com/XavierGreek"><img src={require("../../assets/images/twitter.svg").default} alt="twitter"/></a>

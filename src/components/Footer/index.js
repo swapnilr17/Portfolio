@@ -7,7 +7,8 @@ const Footer = () =>{
   return(
     <div className="footer">
       <div className="footer-container">
-        <div className="caption">{`${year} `+' © '+' Swapnil Rawat'} | Crafted with <img src={require('../../assets/images/love.png').default}/>by <a href="http://www.instagram.com/swapnilr17">@swapnilr17</a></div>
+        <div className="caption">{'Swapnil Rawat'+' © '+`${year} `}</div>
+        <div className="caption-second"><a href="http://www.instagram.com/swapnilr17">Instagram</a><a href="http://www.instagram.com/swapnilr17">github</a></div>
       </div>
     </div>
   )
