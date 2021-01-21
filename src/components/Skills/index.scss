@@ -43,6 +43,10 @@ h1{
   display:flex;
   justify-content: center;
   flex-direction: column;
+
+  &:hover{
+    box-shadow:0 20px 60px rgba(68, 71, 99, 0.336);
+  }
   .skill-image{
     border-radius: 10px 10px 0 0;
     width:100%;
