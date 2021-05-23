@@ -1,8 +1,7 @@
 import React from 'react';
 import './index.scss';
-import Typical from 'react-typical';
 import Typewriter from 'typewriter-effect';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Home = () =>{
   return(
@@ -13,7 +12,7 @@ const Home = () =>{
       Swapnil Rawat
       </div>
       <div className="home-text-p">
-        <p>I am a </p><Typewriter options={{strings: ['Web Developer', 'Ui Designer'],autoStart: true,loop: true, pauseFor: '500'}}/>
+        <p>I am a </p><Typewriter options={{strings: ['Web Developer', 'Ui Designer','Tech Enthusiast'],autoStart: true,loop: true, pauseFor: '500'}}/>
       </div>
       <div className="social-icons">
         <a href="https://www.twitter.com/XavierGreek"><img src={require("../../assets/images/twitter.svg").default} alt="twitter"/></a>
@@ -27,7 +26,7 @@ const Home = () =>{
                         exact ='true'
                         offset={-80}><button>Projects</button></Link></div>
     </div>
-    <div className="home-image"><img src={require("../../assets/images/blogging.png").default}/></div>
+    <div className="home-image"><img src={require("../../assets/images/blogging.png").default } alt="home"/></div>
   </div>
 </div>
 

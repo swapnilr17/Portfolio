@@ -9,11 +9,11 @@ const postdata = [
     },
     {
         id:2,
-        image:require('../assets/images/extractimg.png').default,
-        title:"Text Extraction From Image",
-        tag:'EJS, Node Js',
+        image:require('../assets/images/gradient.PNG').default,
+        title:"Gradient App",
+        tag:'React, Redux, Node Js',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        path: 'https://extractimg.herokuapp.com/'
+        path: 'https://gradientz.netlify.app/'
     },
     {
         id:3,
@@ -25,27 +25,27 @@ const postdata = [
     },
     {
         id:4,
-        image:require('../assets/images/grid.jpg').default,
-        title:"New to coding4",
-        tag:'react, nodejs',
+        image:require('../assets/images/bookstore.PNG').default,
+        title:"Book Store Application",
+        tag:'react, nodejs, MongoDb',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        path: 'project04'
+        path: 'https://mybookstore-js.herokuapp.com/'
     },
     {
         id:5,
-        image:require('../assets/images/grid.jpg').default,
-        title:"New to coding5",
-        tag:'react, nodejs',
+        image:require('../assets/images/chatapp.PNG').default,
+        title:"Chat Application",
+        tag:'react, Firebase',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        path: 'project05'
+        path: 'https://globalchat.netlify.app/'
     },
     {
         id:6,
-        image:require('../assets/images/grid.jpg').default,
-        title:"New to coding6",
-        tag:'react, nodejs',
+        image:require('../assets/images/extractimg.png').default,
+        title:"Text Extraction From Image",
+        tag:'Ejs, nodejs',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        path: 'project06'
+        path: 'https://extractimg.herokuapp.com/'
     }
 ]
 

@@ -1,6 +1,6 @@
 import React ,{useState} from 'react';
 import './index.scss';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 const Navbar = ({toggle,isOpen}) =>{
 

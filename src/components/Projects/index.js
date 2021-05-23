@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.scss';
-import {BrowserRouter as Router, Link} from 'react-router-dom'
-import postdata from '../../Pages/data'
+import postdata from '../../Pages/data';
 
 const Project = () =>{
 
@@ -11,7 +10,7 @@ const Project = () =>{
         <div className="project-title">
           <div className="title-container">
           <p>Projects</p>
-          <h1></h1>
+          <h1> </h1>
           </div>
         </div>
         <div className="grid">
@@ -20,7 +19,7 @@ const Project = () =>{
             <div className="grid-image"><img src={post.image} alt="twitter"/></div>
             <div className="grid-title">{post.title}</div>
             <div className="grid-p">{post.tag}</div>
-            <div className="grid-button"><a href={post.path} style={{ textDecoration: 'none' }}><button>View Project</button></a></div>
+            <div className="grid-button"><a href={post.path} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}><button>View Project</button></a></div>
             </div>
           ))}
         </div>
