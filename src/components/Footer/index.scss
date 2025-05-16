@@ -1,9 +1,10 @@
 .footer{
   width:100%;
-  background: black;
+  background: var(--navbar, #f8f8f8);
+  color: var(--text, #222);
   height: 80px;
   bottom:0;
-  
+  transition: background 0.3s, color 0.3s;
 }
 
 .footer-container{
@@ -18,21 +19,21 @@
 
 .caption{
   margin-top: 15px;
-  color:white;
+  color: var(--text, #222);
   font-size: 0.8em;
   font-weight: 200;
 }
 
 .caption-second{
   margin-top: 15px;
-  color:white;
+  color: var(--text, #222);
   font-size: 0.8em;
   font-weight: 200;
 
 }
 
 .caption-second a{
-  color: aliceblue;
+  color: var(--text, #222);
   list-style: none;
   text-decoration:none;
   margin-left: 10px;
@@ -45,7 +46,7 @@
 }
 .caption a{
   text-decoration: none;
-  color:white;
+  color: var(--text, #222);
   margin-left:8px;
 }
 .caption a:hover{
@@ -66,4 +67,13 @@
     margin-top: 0;
     font-size: 12px;
   }
+}
+
+body[data-theme='dark'] .footer {
+  --navbar: #23272f;
+  --text: #f8f8f8;
+}
+body[data-theme='light'] .footer {
+  --navbar: #23272f;
+  --text: #f8f8f8;
 }

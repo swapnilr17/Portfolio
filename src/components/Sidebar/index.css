@@ -1,5 +1,8 @@
 .sidebar{
   display:none;
+  background: var(--navbar, #f8f8f8);
+  color: var(--text, #222);
+  transition: background 0.3s, color 0.3s;
 }
 
 .sidebar-active{
@@ -29,4 +32,13 @@
   align-items: center;
   list-style-type: none;
 }
+}
+
+body[data-theme='dark'] .sidebar {
+  --navbar: #23272f;
+  --text: #f8f8f8;
+}
+body[data-theme='light'] .sidebar {
+  --navbar: #f8f8f8;
+  --text: #222;
 }

@@ -2,7 +2,7 @@
   margin:0;
   padding-top:20px;
   padding-bottom: 40px;
-  background:#F3F4F9;
+  background: var(--bg, #F3F4F9);
   min-width:100%;
 }
 
@@ -46,7 +46,7 @@ h1{
 }
 
 .grid-item{
-  background:white;
+  background: var(--tile-bg, white);
   box-shadow:0 60px 120px rgba(150,155,187,.2);
   border-radius: 10px;
   display:flex;
@@ -129,6 +129,37 @@ h1{
   }
 }
 
+.projects {
+  background: var(--bg, #fff);
+  color: var(--text, #222);
+  transition: background 0.3s, color 0.3s;
+  .projects-title, .projects-list, .projects-item {
+    color: var(--text, #222);
+  }
+}
+
+body[data-theme='dark'] .projects {
+  --bg: #181818;
+  --text: #f8f8f8;
+}
+body[data-theme='light'] .projects {
+  --bg: #fff;
+  --text: #222;
+}
+
+body[data-theme='dark'] .project {
+  --bg: #181818;
+}
+body[data-theme='light'] .project {
+  --bg: #F3F4F9;
+}
+
+body[data-theme='dark'] .grid-item {
+  --tile-bg: #23272f;
+}
+body[data-theme='light'] .grid-item {
+  --tile-bg: white;
+}
 
 
 @media only screen and (max-width: 1000px) {

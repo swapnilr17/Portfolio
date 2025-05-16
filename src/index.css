@@ -28,8 +28,28 @@ body{
 
 
 
-:root{
+:root {
+  --bg: #fff;
+  --text: #222;
+  --navbar: #f8f8f8;
   scrollbar-color: #00C7F2 #ffffff !important;
   scrollbar-width: thick !important;
   scrollbar-border-radius: 1ex;
+}
+
+body[data-theme='dark'] {
+  --bg: #181818;
+  --text: #f8f8f8;
+  --navbar: #232323;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar {
+  background: var(--navbar);
+  transition: background 0.3s;
 }

@@ -64,7 +64,12 @@ overflow-x:hidden;
 .contact-form{
   padding:20px;
   width:50%;
-  background:white;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+body[data-theme='dark'] .contact-form {
+  background: #23272f;
 }
 
 .contact-form form{
@@ -87,7 +92,8 @@ form span{
     -moz-text-fill-color:transparent;
 }
 
-form input[type="text"]{
+form input[type="text"],
+form input[type="email"] {
   margin: 10px;
   width:50%;
   height:50px;
@@ -148,7 +154,8 @@ form button:hover {
   .contact-container{
     padding:40px;
   }
-  form input[type="text"]{
+  form input[type="text"],
+  form input[type="email"] {
     width:80%;
   }
 
@@ -159,4 +166,27 @@ form button:hover {
   form button{
     width:80%;
   }
+}
+
+.contact {
+  background: var(--bg, #fff);
+  color: #fff !important;
+  transition: background 0.3s, color 0.3s;
+  .contact-details, .contact-form, .detail-title, .detail, .form-success {
+    color: #fff !important;
+  }
+  .detail-image img, .detail img {
+    transition: filter 0.3s;
+  }
+}
+
+body[data-theme='dark'] .contact {
+  --bg: #181818;
+  --text: #f8f8f8;
+  --accent: #FFD700;
+}
+body[data-theme='light'] .contact {
+  --bg: #fff;
+  --text: #222;
+  --accent: #007bff;
 }
