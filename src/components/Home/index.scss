@@ -87,25 +87,24 @@ body[data-theme='light'] .home-text-p .iam {
 }
 
 .home-button button{
-  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
-  color:white;
-  border:0;
-  padding:20px 55px;
-  border-radius:50px;
-  font-weight:500;
-  font-size:15px;
+  background: #f5f5f5;
+  color: #222;
+  border: 1.5px solid #e0e0e0;
+  padding: 14px 36px;
+  border-radius: 10px; /* slightly straight and round edges */
+  font-weight: 600;
+  font-size: 13px;
   text-transform: uppercase;
-  box-shadow: 0 0 20px #bdbbbb;
- transition: 0.5s;
-  background-size: 200% auto;
+  box-shadow: none;
   cursor: pointer;
-  outline:none;
+  outline: none;
+  transition: background 0.35s cubic-bezier(0.4,0,0.2,1), color 0.35s cubic-bezier(0.4,0,0.2,1), border 0.35s cubic-bezier(0.4,0,0.2,1), transform 0.2s;
 }
 
 .home-button button:hover {
-  background-position: right center; /* change the direction of the change here */
-  box-shadow: 0 0 30px #eee;
-  text-decoration: none;
+  background: #3983e4;
+  color: #fff;
+  border-color: #3983e4;
 }
 
 .social-icons{
@@ -170,12 +169,8 @@ body[data-theme='light'] .home-text-p .iam {
 }
 
 body[data-theme='dark'] .home {
-  --bg: #181818;
-  --text: #f8f8f8;
   --logo-filter: brightness(0) invert(1);
 }
 body[data-theme='light'] .home {
-  --bg: #fff;
-  --text: #222;
   --logo-filter: none;
 }

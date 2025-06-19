@@ -30,6 +30,7 @@ body{
 
 :root {
   --bg: #fff;
+  --bg-secondary: #b5b5b7;
   --text: #222;
   --navbar: #f8f8f8;
   scrollbar-color: #00C7F2 #ffffff !important;
@@ -38,7 +39,8 @@ body{
 }
 
 body[data-theme='dark'] {
-  --bg: #181818;
+  --bg: #06070b;
+  --bg-secondary: #171a23;
   --text: #f8f8f8;
   --navbar: #232323;
 }

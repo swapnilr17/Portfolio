@@ -49,13 +49,3 @@
   height:100%;
   border-radius:50%;
 }
-
-body[data-theme='dark'] .about {
-  --bg: #181818;
-  --text: #f8f8f8;
-}
-
-body[data-theme='light'] .about {
-  --bg: #fff;
-  --text: #222;
-}

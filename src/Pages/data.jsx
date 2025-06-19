@@ -34,7 +34,7 @@ const postdata = [
     {
         id:4,
         image: bookstoreImg,
-        title:"Book Store Application",
+        title:"Bookstore App",
         tag:'react, nodejs, MongoDb',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         path: 'https://mybookstore-js.herokuapp.com/'
@@ -50,8 +50,8 @@ const postdata = [
     {
         id:6,
         image: extractimgImg,
-        title:"Text Extraction From Image",
-        tag:'Ejs, nodejs',
+        title:"Text OCR",
+        tag:'nodejs',
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         path: 'https://extractimg.herokuapp.com/'
     }

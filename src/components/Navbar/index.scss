@@ -10,9 +10,22 @@
 }
 
 .navbar.active{
-  background: var(--navbar, #f8f8f8);
+  background: rgba(255, 255, 255, 0.18);
   color: var(--text, #222);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  margin: 16px 0 0 0;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
+  width: calc(100% - 32px);
+  max-width: 1100px;
+  padding: 0 32px;
+  transition: background 0.3s, color 0.3s, border-radius 0.3s, box-shadow 0.3s, width 0.3s, margin 0.3s, padding 0.3s;
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
 }
 
 .nav70{
@@ -24,19 +37,13 @@
   align-items:center;
 }
 
-.nav-logo{
-  color:black;
-  font-size:30px;
-  font-weight:300;
-  height:70%;
-  width:70%;
-
-}
-
 .nav-logo img{
   cursor: pointer;
-  max-width:100%;
-  max-height:100%;
+  max-width: 34px;
+  max-height: 34px;
+  border-radius: 5px;
+  border: none;
+  background: none;
 }
 
 .nav-subheadings{
@@ -57,11 +64,13 @@ li a{
   text-decoration:none;
   color:black;
   cursor: pointer;
+  padding: 6px 18px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s;
 }
 
-li a:hover{
-  color:#3983e4;
-}
+
 
 .nav-list{
   display:flex;
@@ -149,7 +158,7 @@ display:none;
 }
 
 .navbar {
-  background: var(--navbar);
+  background: var(--bg); // Match exactly with body background
   color: var(--text);
   transition: background 0.3s, color 0.3s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -184,7 +193,7 @@ display:none;
 body[data-theme='dark'] {
   --navbar: #23272f;
   --text: #f8f8f8;
-  --accent: #FFD700;
+  --accent: #007bff;
 }
 
 body[data-theme='light'] {
@@ -193,4 +202,14 @@ body[data-theme='light'] {
   --accent: #007bff;
   --logo-filter: none;
   --icon-color: #333;
+}
+
+.nav-subheadings li a.active {
+  border: 2px solid #3983e4;
+  border-radius: 8px;
+  background: #3983e4;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(57, 131, 228, 0.10);
+  /* padding stays the same for smoothness */
+  transition: all 0.3s;
 }

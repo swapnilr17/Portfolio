@@ -16,7 +16,7 @@ const About = () =>{
         <div className="about-post">
         <div className="image"><img src={profileImg} alt="profile"/></div>
         <div className="about-text">
-        Hello my name is Swapnil Rawat. I am a student who is pursuing BTech CSE with specialization in Cloud Computing at Graphic Era Hill University, Dehradun. I am really passionate about the cloud technology with experience in Web Development.</div>
+       Hi, I'm Swapnil Rawat — a software engineer with expertise in FullStack Development. I have a strong track record of improving web performance and building AI-powered features. I enjoy creating scalable, user-focused solutions and thrive in fast-moving, innovative teams.</div>
         </div>
       </div>
     </div>

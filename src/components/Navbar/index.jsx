@@ -1,7 +1,7 @@
 import React ,{useState, useContext} from 'react';
 import './index.scss';
 import { Link, animateScroll as scroll } from 'react-scroll'
-import navImg from "../../assets/images/nav.svg";
+import navImg from "../../assets/images/logo.png";
 import { ThemeContext } from '../../../src/theme-context';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
