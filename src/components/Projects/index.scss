@@ -2,7 +2,6 @@
   margin:0;
   padding-top:20px;
   padding-bottom: 40px;
-  background: var(--bg);
   min-width:100%;
 }
 
@@ -138,7 +137,7 @@ h1{
 }
 
 .projects {
-  background: var(--bg, #fff);
+  background: transparent;
   color: var(--text, #222);
   transition: background 0.3s, color 0.3s;
   .projects-title, .projects-list, .projects-item {

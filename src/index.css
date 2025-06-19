@@ -46,7 +46,9 @@ body[data-theme='dark'] {
 }
 
 body {
-  background: var(--bg);
+  /* background: url('/src/assets/images/background.jpg') no-repeat center center fixed;
+  background-size: cover; */
+  background:#06070b;
   color: var(--text);
   transition: background 0.3s, color 0.3s;
 }

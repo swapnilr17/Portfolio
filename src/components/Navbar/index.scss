@@ -158,10 +158,10 @@ display:none;
 }
 
 .navbar {
-  background: var(--bg); // Match exactly with body background
+  background: transparent !important;
   color: var(--text);
   transition: background 0.3s, color 0.3s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: none !important;
   
   .nav-logo img {
     transition: filter 0.3s;
@@ -207,7 +207,7 @@ body[data-theme='light'] {
 .nav-subheadings li a.active {
   border: 2px solid #3983e4;
   border-radius: 8px;
-  background: #3983e4;
+  background: linear-gradient(90deg, #23272f 0%, #1a1d23 100%);
   color: #fff !important;
   box-shadow: 0 2px 8px rgba(57, 131, 228, 0.10);
   /* padding stays the same for smoothness */
