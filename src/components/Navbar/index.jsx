@@ -1,14 +1,11 @@
-import React ,{useState, useContext} from 'react';
+import React from 'react';
 import './index.scss';
 import { Link, animateScroll as scroll } from 'react-scroll'
 import navImg from "../../assets/images/logo.png";
-import { ThemeContext } from '../../../src/theme-context';
-import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Navbar = ({toggle,isOpen}) =>{
 
-  const [active, setActive] = useState(false);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [active, setActive] = React.useState(false);
 
 const changeBackground = ()=>{
   if(window.scrollY>= 80){
@@ -63,9 +60,7 @@ const toggleHome = () => {
         <li id="new2"></li>
         <li id="new3"></li>
       </ul>
-      <div className="theme-toggle" onClick={toggleTheme} style={{cursor: 'pointer', marginLeft: '3rem'}}>
-        {theme === 'dark' ? <FaSun size={22} color="#FFD700" title="Light mode"/> : <FaMoon size={22} color="#333" title="Dark mode"/>}
-      </div>
+      {/* Theme toggle removed, always dark mode */}
     </div>
     </div>
   </div>

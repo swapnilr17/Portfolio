@@ -5,12 +5,12 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     const stored = sessionStorage.getItem('theme');
-    return stored ? stored : 'light';
+    return stored ? stored : 'dark';
   });
 
   useEffect(() => {
-    document.body.setAttribute('data-theme', theme);
-    sessionStorage.setItem('theme', theme);
+    document.body.setAttribute('data-theme', 'dark');
+    sessionStorage.setItem('theme', 'dark');
   }, [theme]);
 
   const toggleTheme = () => {

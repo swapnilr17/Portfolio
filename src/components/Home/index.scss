@@ -1,7 +1,7 @@
 .home{
   width:100%;
   height:100vh;
-  background: transparent;
+  background: var(--bg, #fff);
   color: var(--text, #222);
   transition: background 0.3s, color 0.3s;
 }
@@ -92,19 +92,21 @@ body[data-theme='light'] .home-text-p .iam {
   border: 1.5px solid #e0e0e0;
   padding: 14px 36px;
   border-radius: 10px; /* slightly straight and round edges */
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 15px;
   text-transform: uppercase;
   box-shadow: none;
   cursor: pointer;
   outline: none;
-  transition: background 0.35s cubic-bezier(0.4,0,0.2,1), color 0.35s cubic-bezier(0.4,0,0.2,1), border 0.35s cubic-bezier(0.4,0,0.2,1), transform 0.2s;
+  transition: background 0.2s, color 0.2s, border 0.2s;
 }
 
 .home-button button:hover {
-  background: #3983e4;
-  color: #fff;
-  border-color: #3983e4;
+  background: #e0e0e0;
+  color: #222;
+  box-shadow: none;
+  border-color: #cccccc;
+  text-decoration: none;
 }
 
 .social-icons{
