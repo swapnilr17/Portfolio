@@ -16,12 +16,42 @@ const Contact = () => {
   const modalRef = useRef(null);
   const timerRef = useRef(null);
 
+
   function handleChange(e) {
     const value = e.target.value;
     setForm({
       ...form,
       [e.target.name]: value
     });
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      const res = await fetch('https://w24gvklj4m.execute-api.us-east-1.amazonaws.com/default/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message
+        })
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        setForm({ name: '', email: '', subject: '', message: '' });
+        timerRef.current = setTimeout(() => {
+          setSubmitted(false);
+        }, 3000);
+      } else {
+        // Optionally handle error
+        alert('Failed to send message.');
+      }
+    } catch (err) {
+      alert('Error sending message.');
+    }
   }
 
   function closeModal() {
@@ -83,15 +113,12 @@ const Contact = () => {
             <div className="detail"><img src={addressImg} alt="address" />Dehradun, Uttarakhand</div>
           </div>
           <div className="contact-form">
-            <form id="form" action="https://formsubmit.co/swapnilr1700@gmail.com" method="POST" autoComplete="off">
+            <form id="form" autoComplete="off" onSubmit={handleSubmit}>
               <span>Get In Touch</span>
               <input required type="text" name="name" id="name" placeholder="Full Name" value={form.name} onChange={handleChange} />
               <input required type="email" name="email" id="email" placeholder="Email" value={form.email} onChange={handleChange} />
               <input required type="text" name="subject" id="subject" placeholder="Subject" value={form.subject} onChange={handleChange} />
               <textarea required name="message" id="message" placeholder="Message" value={form.message} onChange={handleChange} />
-              {/* Prevent spam with a honeypot field */}
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value={window.location.origin + window.location.pathname + '?submitted=true'} />
               <button type="submit" name="submit" value="Submit">Send</button>
             </form>
           </div>
